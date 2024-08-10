@@ -17,6 +17,7 @@ function previousSlide() {
 
 setInterval(nextSlide, 4000); 
 
+
 // const prev = document.getElementById('prev');
 // const next = document.getElementById('next');
 // const testimonialsContainer = document.querySelector('.testimonials-container');
@@ -38,21 +39,21 @@ setInterval(nextSlide, 4000);
 //     showTestimonial();
 // });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
     hamburger.addEventListener('click', function() {
-        navMenu.classList.toggle('active'); // Toggle the 'active' class on the nav menu
-        hamburger.classList.toggle('is-active'); // Toggle the 'is-active' class on the hamburger for visual feedback
+        navMenu.classList.toggle('active'); 
+        hamburger.classList.toggle('is-active'); 
     });
 });
 
 
+
 // Get the button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
     scrollFunction();
 };
@@ -65,7 +66,6 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 scrollToTopBtn.onclick = function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
