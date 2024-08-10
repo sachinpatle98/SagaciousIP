@@ -15,27 +15,49 @@ function previousSlide() {
     showSlide(currentSlide - 1);
 }
 
-setInterval(nextSlide, 3000); // Slide change every 3 seconds
+setInterval(nextSlide, 4000); 
 
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const testimonialsContainer = document.querySelector('.testimonials-container');
-const cards = document.querySelectorAll('.testimonial-card');
-let index = 0;
+// const prev = document.getElementById('prev');
+// const next = document.getElementById('next');
+// const testimonialsContainer = document.querySelector('.testimonials-container');
+// const cards = document.querySelectorAll('.testimonial-card');
+// let index = 0;
 
-function showTestimonial() {
-    const width = cards[0].offsetWidth + 20; // Including margin
-    testimonialsContainer.style.transform = `translateX(${-index * width}px)`;
+// function showTestimonial() {
+//     const width = cards[0].offsetWidth + 20;
+//     testimonialsContainer.style.transform = `translateX(${-index * width}px)`;
+// }
+
+// prev.addEventListener('click', () => {
+//     index = (index > 0) ? index - 1 : cards.length - 1; // Circular scrolling
+//     showTestimonial();
+// });
+
+// next.addEventListener('click', () => {
+//     index = (index < cards.length - 1) ? index + 1 : 0; // Circular scrolling
+//     showTestimonial();
+// });
+
+
+// Get the button
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
 }
 
-// Update the index and apply the sliding effect
-prev.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : cards.length - 1; // Circular scrolling
-    showTestimonial();
-});
+// When the user clicks on the button, scroll to the top of the document
+scrollToTopBtn.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
-next.addEventListener('click', () => {
-    index = (index < cards.length - 1) ? index + 1 : 0; // Circular scrolling
-    showTestimonial();
-});
 

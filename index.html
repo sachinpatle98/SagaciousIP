@@ -76,13 +76,33 @@
     <div class="slider">
         <div class="slides">
             <div class="slide" style="background-image: url('./assets/slide1.png');">
+                <div class="slide-overlay">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, totam?</p>
+                    <button class="know-more">Know More</button>
+                </div>
             </div>
             <div class="slide" style="background-image: url('./assets/slide2.png');">
+                <div class="slide-overlay">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, explicabo.</p>
+                    <button class="know-more">Know More</button>
+                </div>
             </div>
             <div class="slide" style="background-image: url('./assets/slide3.png');">
+                <div class="slide-overlay">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aut.</p>
+                    <button class="know-more">Know More</button>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="slide-controls">
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <button id="pause">II</button>
+    </div>
+
+    <section class="award-section">
     <div class="awards-accolades">
         <h5>Awards & <span>Accolades</span></h5>
         <div class="awards-slider">
@@ -110,9 +130,11 @@
             </div>
         </div>
     </div>
+</section>
     
     <section class="vision-section">
         <h2 class="vision-title">Our <span>Vision</span></h2>
+        <div class="border-line"></div>
         <div class="vision-content">
             <div class="vision-image">
                 <img src="./assets/vision.png" alt="Vision Image">
@@ -149,6 +171,7 @@
             <p>22 <span class="highlight">Y</span></p>
         </div>
     </section>
+
     <section >
         <h1>Sagacious <span class="red-text">Events</span></h1>
         <div class="tabs">
@@ -333,6 +356,7 @@
 
     <section class="testimonials">
         <h2>Opinion of <span>Our Clients</span></h2>
+        <button class="view-testimonial">View All ></button>
         <div class="testimonials-container">
             <div class="testimonial-card">
                 <p class="testimonial-text">
@@ -475,10 +499,12 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2024 Sagacious IP. All Rights Reserved.</p>
-            <a href="#">Terms of Use/Privacy Policy</a>
+            <span><p>© 2024 Sagacious IP. All Rights Reserved.</p> <a href="#">Terms of Use/Privacy Policy</a> </span>
         </div>
     </footer>
+
+    <button id="scrollToTopBtn" title="Go to top">&#8679;</button>
+
     
 
     <script src="script.js"></script>

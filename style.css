@@ -24,12 +24,16 @@ body {
 .contact-info span {
     margin-right: 15px;
     font-size: 7px;
+    cursor: pointer;
 }
-
+.contact-info span:hover{
+    text-decoration: underline;
+}
 .header-right {
     display: flex;
     align-items: center;
     font-size: 7px;
+    cursor: pointer;
 }
 .header-right img{
     width: 20px;
@@ -59,6 +63,10 @@ nav ul {
 nav ul li {
     padding: 5px 10px;
     cursor: pointer;
+}
+
+nav ul li:hover{
+    color: #b0292c;
 }
 
 nav ul li.contact a {
@@ -102,8 +110,9 @@ nav ul li.contact a {
 }
 
 .slide {
+    position: relative;
     min-width: 100%;
-    height: 384px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -111,6 +120,59 @@ nav ul li.contact a {
     justify-content: center;
     color: white;
     font-size: 2rem;
+    overflow: hidden;
+}
+.slide-overlay {
+    position: absolute;
+    bottom: -100%; 
+    width: 100%;
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    transition: bottom 0.5s ease-in-out; 
+}
+
+.slide:hover .slide-overlay {
+    bottom: 0; 
+}
+
+.slide-overlay p {
+    margin: 0;
+    font-size: 12px; 
+    margin-left: 125px;
+}
+.slide-overlay .know-more{
+    background-color: #b0292c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    float: right;
+    font-size: 8px;
+    margin-right:100px;
+}
+
+.slide-controls{
+    float: right;
+    margin-right: 85px;
+    margin-top: 10px;
+}
+
+.slide-controls button{
+    font-size: 8px;
+    font-weight: 800;
+    height: 15px;
+    width: 15px;
+    color: black;
+    border: 0.4px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+    transition: background-color 0.3s;
+}
+
+.slide-controls button:hover {
+    background-color: gray;
 }
 
 .dropdown-card {
@@ -144,6 +206,7 @@ nav ul li.contact a {
 
 .column p {
     margin: 10px 0;
+    color: #1d1d1d;
 }
 
 .dropdown-content {
@@ -242,17 +305,25 @@ nav ul li.contact a {
     }
 }
 
+.award-section{
+    background-color: #f8f8f8;
+     width: 100%;
+     border-top: 0.1px solid gray;
+     margin-top: 100px;
+}
+
 .awards-accolades {
     padding: 20px 0;
     background-color: #f8f8f8;
     text-align: right;
     margin-top: 30px;
+    width: 90%;
+    margin: auto;
 }
 
 .awards-accolades h5 {
     font-size: 15px;
-    margin: -34px  49px 20px 0;
-    border-bottom: 0.1px solid gray;
+    margin: -45px  49px 20px 0;
 
 }
 .awards-accolades h5 span {
@@ -287,22 +358,19 @@ nav ul li.contact a {
 }
 
 .vision-section {
-    max-width: 1200px;
+    /* width: 100%; */
     margin: 0 auto;
     padding: 20px;
+}
+.border-line{
+    border-bottom: 0.1px solid gray;
 
 }
 
 .vision-title {
     font-size: 15px;
     color: #333;
-    text-align: left;
-    /* margin-bottom: 20px;
-    margin-right: 10px; */
     margin-left: 25px;
-    border-bottom: 0.1px solid gray;
-
-
 }
 
 .vision-title span {
@@ -439,8 +507,9 @@ h1 {
     text-align: center;
     font-size: 15px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1px solid gray;
     margin-top: -30px;
+    padding-bottom: 10px;
 }
 
 .red-text {
@@ -494,8 +563,9 @@ h1 {
 .date-circle {
     width: 35px;
     height: 35px;
+    border: 0.5px solid #8cb4c6;
     border-radius: 50%;
-    background-color: #e0e7ef;
+    /* background-color: #e0e7ef; */
     color: #00aaff;
     font-size: 10px;
     line-height: 55px;
@@ -555,7 +625,8 @@ h1 {
     color: #333;
     margin-bottom: 20px;
     padding-left: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1px solid gray;
+    padding-bottom: 10px;
 }
 
 .services-section h2 .highlight {
@@ -579,7 +650,7 @@ h1 {
 
 .service-card {
 background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: calc(33% - 20px);
@@ -706,8 +777,9 @@ background: rgba(255, 255, 255, 0.9);
 .article-section h2 {
     color: #C71E33;
     font-size: 15px;
-    border-bottom: 1px solid #ddd ;
+    border-bottom: 0.1px solid gray; ;
     padding-left: 10px;
+    padding-bottom: 8px;
 }
 
 .container {
@@ -811,6 +883,19 @@ background: rgba(255, 255, 255, 0.9);
     font-size: 15px;
 }
 
+.view-testimonial{
+    font-size: 10px;
+    color: white;
+    background-color: darkred;
+    padding: 2px 4px;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+    float: right;
+    margin-top: -28px;
+    margin-right: 38px;
+}
+
 .testimonials h2 span {
     color: #e74c3c;
 }
@@ -818,7 +903,7 @@ background: rgba(255, 255, 255, 0.9);
 .testimonials-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     /* overflow: hidden; */
     transition: transform 0.5s ease-in-out;
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -833,7 +918,7 @@ background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 0 10px;
-    flex: 0 0 38%;
+    flex: 0 0 40%;
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -977,6 +1062,9 @@ footer h2, footer h3 {
 .footer-bottom a {
     color: #ffffff;
     text-align: end;
+    margin-top: -9px;
+    font-size: 8px;
+    margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1018,4 +1106,28 @@ footer h2, footer h3 {
     .footer-bottom {
         font-size: 12px;
     }
+}
+
+#scrollToTopBtn {
+    /* display: none; Hidden by default */
+    height: 20px;
+    width: 20px;
+    position: fixed; /* Fixed position to the bottom-right */
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 99; /* Ensure it stays on top of other elements */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    background-color: #b0292c; /* Button background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 3px; /* Button padding */
+    border-radius: 50%; /* Round button */
+    font-size: 14px; /* Increase font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333; /* Change color on hover */
 }
