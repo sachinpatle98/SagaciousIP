@@ -38,6 +38,16 @@ setInterval(nextSlide, 4000);
 //     showTestimonial();
 // });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('active'); // Toggle the 'active' class on the nav menu
+        hamburger.classList.toggle('is-active'); // Toggle the 'is-active' class on the hamburger for visual feedback
+    });
+});
+
 
 // Get the button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
