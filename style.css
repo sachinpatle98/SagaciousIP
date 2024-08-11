@@ -218,95 +218,6 @@ nav ul li.contact a {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo-nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #ffffff;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-menu ul li {
-        text-align: center;
-        padding: 10px 0;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .header-top {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    .contact-info,
-    .header-right {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .contact-info span,
-    .header-right {
-        display: block;
-        margin-right: 0;
-    }
-
-    .contact-info span {
-        margin-bottom: 5px;
-    }
-
-    .header-right {
-        font-size: 8px;
-        /* Adjust font size */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .header-top {
-        padding: 8px 15px;
-        font-size: 6px;
-    }
-
-    .contact-info span,
-    .header-right {
-        font-size: 7px;
-    }
-
-    .header-right img {
-        width: 15px;
-        height: 8px;
-    }
-}
-
-
 .slider {
     position: relative;
     width: 100%;
@@ -446,91 +357,6 @@ nav ul li.contact a {
     transform: translateY(0);
 }
 
-@media screen and (min-width: 1450px) {
-    .slide {
-        height: 470px;
-        width: 420px;
-    }
-
-    .slide-overlay p {
-        margin-left: 215px;
-        font-size: 15px;
-    }
-
-    .slide-overlay .know-more {
-        margin-right: 200px;
-        font-size: 12px;
-    }
-
-    .contact-info span {
-        font-size: 10px;
-    }
-
-    nav ul {
-        font-size: 16px;
-    }
-
-    .header-right {
-        font-size: 10px;
-    }
-
-    .slide-controls button {
-        font-size: 10px;
-        font-weight: 800;
-        height: 18px;
-        width: 18px;
-        color: black;
-        border: 0.4px solid black;
-        border-radius: 50%;
-        cursor: pointer;
-        padding: 2px;
-    }
-
-    .article-text h3 {
-        font-size: 18px;
-    }
-
-    .article-text p {
-        font-size: 12px;
-    }
-
-    .read-more {
-        font-size: 12px;
-    }
-}
-
-
-@media screen and (max-width: 480px) {
-    .slide {
-        min-width: 100%;
-        height: 180px;
-        font-size: 1.25rem;
-    }
-    .slide-overlay{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .header-top .contact-info,
-    .header-top .header-right {
-        font-size: 10px;
-    }
-
-    .logo img {
-        width: 70px;
-    }
-
-    nav.main-nav ul li {
-        font-size: 14px;
-    }
-
-    nav.main-nav ul li.contact a {
-        padding: 10px 20px;
-    }
-}
-
 .award-section {
     background-color: #f8f8f8;
     width: 100%;
@@ -547,13 +373,13 @@ nav ul li.contact a {
     margin: auto;
 }
 
-.awards-accolades h5 {
+.awards-accolades h2 {
     font-size: 15px;
     margin: -45px 49px 20px 0;
 
 }
 
-.awards-accolades h5 span {
+.awards-accolades h2 span {
     color: #c90000;
 }
 
@@ -586,11 +412,6 @@ nav ul li.contact a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .awards-accolades h5 {
-        text-align: left;
-    }
-}
 
 .vision-section {
     margin: 0 auto;
@@ -602,13 +423,13 @@ nav ul li.contact a {
 
 }
 
-.vision-title {
+.vision-section h2{
     font-size: 15px;
     color: #333;
     margin-left: 25px;
 }
 
-.vision-title span {
+.vision-section span {
     color: #b0292c;
 }
 
@@ -659,58 +480,6 @@ nav ul li.contact a {
     margin-left: 140px;
 }
 
-@media screen and (max-width: 768px) {
-    .vision-title {
-        text-align: left;
-    }
-
-    .vision-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .vision-image {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-
-    .vision-image img {
-        margin-left: -110px;
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-        margin-top: 6px;
-    }
-
-    .vision-text {
-        max-width: 100%;
-    }
-
-    .vision-text p {
-        font-size: 14px;
-    }
-
-    .learn-more {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .vision-text {
-        width: 50%;
-        margin-top: 90px;
-    }
-
-    .vision-text p {
-        line-height: 1.4;
-        color: #555;
-        font-size: 12px;
-    }
-
-    .vision-text h6 {
-        margin-top: 10px;
-    }
-}
 
 .statistics-section {
     display: flex;
@@ -745,7 +514,7 @@ nav ul li.contact a {
     color: #C71E33;
 }
 
-h1 {
+.event-section .title {
     text-align: center;
     font-size: 15px;
     margin-bottom: 20px;
@@ -832,13 +601,6 @@ h1 {
 
 .event-card p {
     font-size: 8px;
-}
-
-@media screen and (max-width: 768px) {
-    h1 {
-        text-align: left;
-        margin-left: 10px;
-    }
 }
 
 .attendees {
@@ -941,18 +703,6 @@ h1 {
     text-decoration: none;
 }
 
-@media screen and (max-width: 1024px) {
-    .service-card {
-        width: calc(45% - 20px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .service-card {
-        width: calc(100% - 40px);
-    }
-}
-
 .email-section {
     padding: 20px 10%;
     background-color: #f7f4f4;
@@ -1005,23 +755,6 @@ h1 {
     background-color: #c32b2b;
 }
 
-@media screen and (max-width: 768px) {
-    .email-container {
-        flex-direction: column;
-    }
-
-    .email-form {
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-
-    .email-form input[type="email"],
-    .email-form button {
-        width: auto;
-    }
-}
-
 
 .articles-section {
     max-width: 1200px;
@@ -1029,7 +762,7 @@ h1 {
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
-    margin-bottom: -145px;
+    /* margin-bottom: 20px; */
 }
 
 .view-articles {
@@ -1043,7 +776,7 @@ h1 {
     margin-right: 38px;
 }
 
-.section-title {
+.articles-section h2{
     font-size: 15px;
     color: #b0292c;
     margin-bottom: 20px;
@@ -1140,44 +873,11 @@ h1 {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .articles-container {
-        flex-direction: column;
-    }
-
-    .left-side,
-    .right-side {
-        width: 100%;
-        flex: none;
-    }
-
-    .right-side {
-        flex-direction: column;
-    }
-
-    .article-2,
-    .article-3 {
-        flex-direction: column;
-    }
-
-    .article {
-        height: auto;
-    }
-
-    .article-2 img,
-    .article-3 img {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-
-
 .client-section {
     background-color: #f8f8f8;
     width: 100%;
     border-top: 0.1px solid gray;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .our-clients {
@@ -1189,13 +889,13 @@ h1 {
     margin: auto;
 }
 
-.our-clients h5 {
+.our-clients h2 {
     font-size: 15px;
     margin: -45px 49px 20px 0;
 
 }
 
-.our-clients h5 span {
+.our-clients h2 span {
     color: #c90000;
 }
 
@@ -1228,22 +928,6 @@ h1 {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .client-section {
-        margin-top: 800px;
-    }
-
-    .our-clients h5 {
-        text-align: left;
-
-    }
-}
-
-@media screen and (min-width: 866px) {
-    .client-section {
-        margin-top: 250px;
-    }
-}
 
 .testimonials {
     width: 100%;
@@ -1345,75 +1029,6 @@ h1 {
     background-color: gray;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .testimonials h2 {
-        font-size: 18px;
-        text-align: left;
-        margin-left: 0;
-    }
-
-    .view-testimonial {
-        font-size: 10px;
-        padding: 4px 8px;
-        margin-right: 0;
-        margin-top: -20px;
-    }
-
-    .testimonials-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial-card {
-        flex: 1 0 80%; 
-        margin-bottom: 20px;
-    }
-
-    .testi-details {
-        font-size: 10px;
-    }
-
-    .testi-company {
-        position: relative;
-        left: 0;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .client-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .controls {
-        display: none; 
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .testimonials h2 {
-        font-size: 16px;
-    }
-
-    .testimonial-card {
-        flex: 1 0 100%;
-        padding: 15px;
-    }
-
-    .testimonial-text {
-        font-size: 12px;
-    }
-
-    .testi-details {
-        font-size: 9px;
-    }
-
-    .client-img {
-        width: 35px;
-        height: 35px;
-    }
-}
 
 footer {
     background-color: #1d1d1d;
@@ -1497,7 +1112,253 @@ footer li {
     font-size: 10px;
 }
 
+#scrollToTopBtn {
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #b0292c;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #333;
+}
+
+
+
 @media screen and (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .contact-info,
+    .header-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-info span,
+    .header-right {
+        display: block;
+        margin-right: 0;
+    }
+
+    .contact-info span {
+        margin-bottom: 5px;
+    }
+
+    .header-right {
+        font-size: 8px;
+    }
+
+    .logo-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .awards-accolades h2 {
+        text-align: left;
+    }
+
+    .vision-section h2{
+        text-align: left;
+    }
+
+    .vision-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vision-image {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .vision-image img {
+        margin-left: -110px;
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+        margin-top: 6px;
+    }
+
+    .vision-text {
+        max-width: 100%;
+    }
+
+    .vision-text p {
+        font-size: 14px;
+    }
+
+    .learn-more {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .vision-text {
+        width: 50%;
+        margin-top: 90px;
+    }
+
+    .vision-text p {
+        line-height: 1.4;
+        color: #555;
+        font-size: 12px;
+    }
+
+    .vision-text h6 {
+        margin-top: 10px;
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .service-card {
+        width: calc(100% - 40px);
+    }
+
+    .email-container {
+        flex-direction: column;
+    }
+
+    .email-form {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .email-form input[type="email"],
+    .email-form button {
+        width: auto;
+    }
+
+    .articles-container {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        flex: none;
+    }
+
+    .right-side {
+        flex-direction: column;
+    }
+
+    .article-2,
+    .article-3 {
+        flex-direction: column;
+    }
+
+    .article {
+        height: auto;
+    }
+
+    .article-2 img,
+    .article-3 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .client-section {
+        margin-top: 680px;
+    }
+
+    .our-clients h2 {
+        text-align: left;
+
+    }
+
+    .testimonials h2 {
+        font-size: 18px;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .view-testimonial {
+        font-size: 10px;
+        padding: 4px 8px;
+        margin-right: 0;
+        margin-top: -20px;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        flex: 1 0 80%; 
+        margin-bottom: 20px;
+    }
+
+    .testi-details {
+        font-size: 10px;
+    }
+
+    .testi-company {
+        position: relative;
+        left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .client-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .controls {
+        display: none; 
+    }
+
     .footer-links {
         flex-direction: column;
         align-items: center;
@@ -1531,9 +1392,80 @@ footer li {
     footer li {
         list-style-type: none;
     }
+
 }
 
+@media screen and (min-width: 1024px) {
+    .client-section {
+        margin-top: 90px;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
+    .header-top {
+        padding: 8px 15px;
+        font-size: 6px;
+    }
+
+    .contact-info span,
+    .header-right {
+        font-size: 7px;
+    }
+
+    .header-right img {
+        width: 15px;
+        height: 8px;
+    }
+
+    .header-top .contact-info,
+    .header-top .header-right {
+        font-size: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    nav.main-nav ul li {
+        font-size: 14px;
+    }
+
+    nav.main-nav ul li.contact a {
+        padding: 10px 20px;
+    }
+
+    .slide {
+        min-width: 100%;
+        height: 180px;
+        font-size: 1.25rem;
+    }
+    .slide-overlay{
+        display: none;
+    }
+
+    .testimonials h2 {
+        font-size: 16px;
+    }
+
+    .testimonial-card {
+        flex: 1 0 100%;
+        padding: 15px;
+    }
+
+    .testimonial-text {
+        font-size: 12px;
+    }
+
+    .testi-details {
+        font-size: 9px;
+    }
+
+    .client-img {
+        width: 35px;
+        height: 35px;
+    }
+
     footer {
         padding: 15px;
     }
@@ -1565,25 +1497,61 @@ footer li {
     }
 }
 
-#scrollToTopBtn {
-    height: 20px;
-    width: 20px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #b0292c;
-    color: white;
-    cursor: pointer;
-    padding: 3px;
-    border-radius: 50%;
-    font-size: 14px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s;
+@media screen and (max-width: 1024px) {
+    .service-card {
+        width: calc(45% - 20px);
+    }
 }
 
-#scrollToTopBtn:hover {
-    background-color: #333;
+@media screen and (min-width: 1450px) {
+    .slide {
+        height: 470px;
+        width: 420px;
+    }
+
+    .slide-overlay p {
+        margin-left: 215px;
+        font-size: 15px;
+    }
+
+    .slide-overlay .know-more {
+        margin-right: 200px;
+        font-size: 12px;
+    }
+
+    .contact-info span {
+        font-size: 10px;
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    .header-right {
+        font-size: 10px;
+    }
+
+    .slide-controls button {
+        font-size: 10px;
+        font-weight: 800;
+        height: 18px;
+        width: 18px;
+        color: black;
+        border: 0.4px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+        padding: 2px;
+    }
+
+    .article-text h3 {
+        font-size: 18px;
+    }
+
+    .article-text p {
+        font-size: 12px;
+    }
+
+    .read-more {
+        font-size: 12px;
+    }
 }
